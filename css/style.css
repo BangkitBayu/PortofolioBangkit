@@ -1,0 +1,283 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FAFAFA;
+}
+body header {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  align-items: center;
+  padding: 1.5rem 1.5rem;
+  width: 100vw;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.095);
+  z-index: 1000;
+  position: fixed;
+}
+body header .logo {
+  font-size: calc(10px + 1vw);
+  font-weight: bold;
+}
+body header .logo span {
+  color: red;
+}
+body header nav ul {
+  display: flex;
+  align-items: center;
+  gap: calc(32px + 1vw);
+}
+body header nav ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+body header nav ul li a {
+  color: #908E9B;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: calc(4px + 1vw);
+  transition: all ease 0.3s;
+}
+body header nav ul li a:hover {
+  font-weight: 400;
+  color: red;
+}
+body header nav ul li a:active {
+  color: red;
+}
+body main {
+  padding: 1rem 1rem;
+}
+body main #home-section {
+  flex: 1 1;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 3rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body main #home-section .content-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem 1.5rem;
+  flex: 2;
+}
+body main #home-section .content-description .subtitle {
+  font-size: calc(12px + 1vw);
+  font-weight: 200;
+}
+body main #home-section .content-description .subtitle span {
+  color: red;
+}
+body main #home-section .content-description .title {
+  font-size: calc(20px + 2vw);
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+body main #home-section .content-description .title span {
+  color: red;
+}
+body main #home-section .content-description .typing-text-container {
+  font-size: calc(8px + 1vw);
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+body main #home-section .content-description .typing-text-container .blink {
+  background-color: red;
+  -webkit-animation: blink 0.7s infinite;
+          animation: blink 0.7s infinite;
+}
+@-webkit-keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+body main #home-section .content-description .lead-description {
+  text-align: left;
+  display: block;
+  width: 100vw;
+  max-width: 450px;
+}
+body main #home-section .content-description .lead-description p {
+  font-size: calc(2px + 1vw);
+  color: #908E9B;
+}
+body main #home-section .content-description .lead-description p span {
+  font-weight: bold;
+}
+body main #home-section .content-description a {
+  text-decoration: none;
+}
+body main #home-section .content-description a button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  width: 10%;
+  border-radius: 25px;
+  background-color: transparent;
+  border: none;
+  color: #908E9B;
+  font-weight: 200;
+  transition: all ease 0.2s;
+  border: 2px solid #908E9B;
+}
+body main #home-section .content-description a button i {
+  -webkit-margin-start: 0.3rem;
+          margin-inline-start: 0.3rem;
+  color: #908E9B;
+  background-color: white;
+  border-radius: 50%;
+}
+body main #home-section .content-description a button:hover {
+  box-shadow: 0 7px 20px red;
+  border: none;
+  background-color: red;
+  color: white;
+  font-weight: 500;
+}
+body main #home-section .content-description a button:hover i {
+  color: black;
+}
+body main #home-section .content-description a button:active {
+  font-weight: 500;
+  transition: all ease 0.2s;
+  transform: translateY(5px);
+  box-shadow: 0 0 0 rgb(191, 8, 8);
+}
+body main #home-section .content-description .social-container {
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem 1.5rem;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+body main #home-section .content-description .social-container i {
+  padding: 0.4rem 0.4rem;
+  text-decoration: none;
+  font-size: calc(12px + 1vw);
+  font-weight: 200;
+  color: #908E9B;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.419);
+  z-index: auto;
+}
+body main #home-section .content-description .social-container i:hover {
+  font-weight: 500;
+  color: red;
+  transform: scale(1.2);
+}
+body main #home-section .content-description .social-container i:active {
+  font-weight: 500;
+  transform: scale(1.2);
+  color: red;
+}
+body main .content-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .content-image img {
+  filter: brightness(120%);
+  border-radius: 50%;
+  border: 4px solid rgb(244, 71, 71);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 380px;
+  height: 380px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.095);
+}
+body main #about-section {
+  position: relative;
+  gap: 1.5rem 1.5rem;
+  height: 100vh;
+  padding: 3rem 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body main #about-section .title {
+  position: relative;
+  -webkit-margin-before: 5rem;
+          margin-block-start: 5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: calc(15px + 2vw);
+}
+body main #about-section .title span {
+  color: red;
+}
+body main #about-section article.container-content-home {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+body main #about-section article.container-content-home .content-image {
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.419);
+  background-color: rgba(234, 27, 27, 0.881);
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
+}
+body main #about-section article.container-content-home .content-image img {
+  position: absolute;
+  filter: grayscale(80%);
+  border: none;
+  outline: none;
+  transform: scale(-1, 1);
+  width: 400px;
+  height: 400px;
+}
+body main #about-section article.container-content-home .table-information {
+  display: grid;
+  gap: 1rem 1rem;
+}
+body main #about-section article.container-content-home .table-information tr th {
+  font-weight: 800;
+  text-align: left;
+}/*# sourceMappingURL=style.css.map */
